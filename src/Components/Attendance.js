@@ -16,7 +16,7 @@ const Attendance = () => {
 
         e.preventDefault()
 
-        if(name !== '' && roll !== '') {
+        if(name !== '' && roll !== '' && !name.includes('0') && !name.includes('1') && !name.includes('2') && !name.includes('3') && !name.includes('4') && !name.includes('5') && !name.includes('6') && !name.includes('7') && !name.includes('8') && !name.includes('9')) {
 
             studentsArray.forEach(student => {
                 if(student.roll === roll) {
@@ -44,7 +44,7 @@ const Attendance = () => {
         }
 
         else{
-            alert('Fill the details completely...')
+            alert("You haven't filled the details completely or else you have entered numbers in the name")
         }
         
     }
@@ -65,7 +65,7 @@ const Attendance = () => {
                         </div>
 
                         <div className="form-floating mt-3 mb-3">
-                            <input type="text" id="roll" className="form-control" placeholder="Enter your age" name="roll" onChange={e => setRoll(e.target.value)}/>
+                            <input type="number" id="roll" className="form-control" placeholder="Enter your age" name="roll" onChange={e => setRoll(e.target.value)}/>
                             <label htmlFor="roll">Roll</label>
                         </div>
 
