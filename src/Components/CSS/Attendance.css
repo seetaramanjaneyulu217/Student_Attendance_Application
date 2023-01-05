@@ -1,0 +1,25 @@
+body {
+    background-color: cornsilk;
+}
+
+.formdiv {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+    margin: 20px 0;
+    margin-left: 250px;
+}
+
+.maindiv{
+    display: flex;
+    justify-content: left;
+    margin: 20px 0;
+}
+form{
+    width: 300px;
+}
+
+#getstudents{
+    margin-left: 79px;
+}
